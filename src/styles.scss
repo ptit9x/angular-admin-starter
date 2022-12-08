@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+
+$background: #F6F6F8;
+$font-color: #FFFF;
+
+html, body, ul, p, h1, h2, h3, h4, h5, h6, blockquote {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: $background;
+}
+
+a {
+  color: $font-color;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.page-container {
+  margin: 1.5rem 1.5rem;
+}
+
+.card {
+  &.card-body {
+    background:#FFFFFF;
+    color: #444;
+    display: flex;
+    flex-grow: 1;
+    transition: background 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background: #d9d9e2;
+      color: #000;
+    }
+  }
+}
